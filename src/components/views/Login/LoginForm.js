@@ -1,7 +1,7 @@
 import React from "react";
-import style from "./RegisterForm.css";
+import style from "./LoginForm.css";
 
-class RegisterForm extends React.Component {
+class LoginForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -29,7 +29,7 @@ class RegisterForm extends React.Component {
         password: this.state.password
       })
   };
-  fetch('https://brooklyn-hackathon.herokuapp.com/api/createUser', requestOptions)
+  fetch('https://brooklyn-hackathon.herokuapp.com/api/loginUser', requestOptions)
       .then(response => response.json())
       .then(data => console.log(data));
 
@@ -59,4 +59,4 @@ class RegisterForm extends React.Component {
   }
 }
 
-export default RegisterForm;
+export default LoginForm;
