@@ -6,8 +6,6 @@ class RegisterForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      firstName: "",
-      lastName: "",
       phone: "",
       password: ""
     };
@@ -24,6 +22,18 @@ class RegisterForm extends React.Component {
 
   handleSubmit(event) {
     alert("A name was submitted: ");
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        phone: this.state.phone,
+        password: this.state.password
+      })
+  };
+  fetch('https://brooklyn-hackathon.herokuapp.com/api/createUser', requestOptions)
+      .then(response => response.json())
+      .then(data => console.log(data));
+
     event.preventDefault();
   }
 
@@ -45,7 +55,7 @@ class RegisterForm extends React.Component {
           type="password"
           value={this.state.password}
           onChange={this.handleChange}
-          placeholder = "Password"
+          placeholder="Password"
         />
 
         <input class = "loginButton" type="submit" value="Submit" />
