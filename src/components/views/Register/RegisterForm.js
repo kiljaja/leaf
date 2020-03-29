@@ -1,6 +1,6 @@
 import React from "react";
 import style from "./RegisterForm.css";
-import logo from './logo1.png'; // with import
+import logo from './logo 3.png'; // with import
 
 class RegisterForm extends React.Component {
   constructor(props) {
@@ -41,7 +41,7 @@ class RegisterForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
 
-      <p class = "title"> Leaf </p>
+      <p class = "title"> Register </p>
 
         <input class = "phoneField"
           name="phone"
@@ -58,8 +58,8 @@ class RegisterForm extends React.Component {
           placeholder="Password"
         />
 
-        <input class = "loginButton" type="submit" value="Submit" />
-        <img src={logo} class = "logo1" />
+        <input class = "loginButton" type="submit" value="Sign up" />
+        <img src={logo} class = "logo3" />
 
         <p class = "registerlink"> Create an account here </p>
       </form>
