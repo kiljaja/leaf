@@ -1,4 +1,4 @@
-
+/*
 .title{
   position: absolute;
 left: 55px;
@@ -11,7 +11,6 @@ font-style: normal;
 font-weight: 500;
 font-size: 70px;
 line-height: 93px;
-/* identical to box height */
 
 display: flex;
 align-items: center;
@@ -41,6 +40,7 @@ background: #c8d5b9;
 mix-blend-mode: normal;
 backdrop-filter: blur(40px);
 /* Note: backdrop-filter has minimal browser support */
+/*
 border-radius: 8px;
 }
 
@@ -56,7 +56,7 @@ background: #c8d5b9;
 mix-blend-mode: normal;
 backdrop-filter: blur(40px);
 /* Note: backdrop-filter has minimal browser support */
-
+/*
 border-radius: 8px;
 }
 
@@ -105,6 +105,40 @@ text-align: center;
 
 color: #000000;
 }
+.submit-btn {
+  max-height: 54px;
+  max-width: 203px;
+  border-radius: 60px;
+  background-color: #8fc0a9;
+}
+*/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.donate-form {
+  display: flex;
+  height: 500px;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px;
+  max-width: 320px;
+}
+
+.input-field {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px black;
+  border-radius: 8px;
+  max-width: 203px;
+  background-color: #c8d5b9;
+  color: #676767;
+}
+
 .submit-btn {
   max-height: 54px;
   max-width: 203px;
