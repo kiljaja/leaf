@@ -1,12 +1,13 @@
 import React from "react";
-import style from "./LoginForm.css";
+import style from "./DonateForm.css";
 
-class LoginForm extends React.Component {
+class DonateForm extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      phone: "",
-      password: ""
+      message: "",
+      address: "",
+      category:""
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -38,27 +39,25 @@ class LoginForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit} className="LoginForm">
-        <input
-          name="phone"
-          className="input-field"
+      <form onSubmit={this.handleSubmit}>
+        <textarea 
+          name="message"
           type="text"
           value={this.state.phone}
           onChange={this.handleChange}
-          placeholder="Phone"
-        />
+          placeholder="Message"
+        > </textarea>
         <input
-          className="input-field"
           name="password"
           type="password"
           value={this.state.password}
           onChange={this.handleChange}
           placeholder="Password"
         />
-        <input className="submit-btn" type="submit" value="Submit" />
+        <input type="submit" value="Submit" />
       </form>
     );
   }
 }
 
-export default LoginForm;
+export default DonateForm;
