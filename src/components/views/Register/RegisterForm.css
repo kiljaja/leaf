@@ -87,12 +87,12 @@ height: 260px;
      overflow-y:hidden;
 }
 
-.registerlink{
+.loginlink{
   position: absolute;
-left: 23.75%;
-right: 14.69%;
-top: 93.49%;
-bottom: 1.94%;
+  width: 242px;
+  height: 22px;
+  left: 60px;
+  top: 502px;
 
 font-family: Red Hat Display;
 font-style: normal;

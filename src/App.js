@@ -6,7 +6,7 @@ import Donate from './components/views/Donate/Donate';
 
 function App() {
   return (
-    
+
     <div>
       <Donate />
     </div>

@@ -61,7 +61,7 @@ class RegisterForm extends React.Component {
         <input class = "loginButton submit-btn" type="submit" value="Sign up" />
         <img src={logo} class = "logo3" />
 
-        <p class = "registerlink"> Create an account here </p>
+
       </form>
     );
   }
