@@ -39,18 +39,18 @@ class RegisterForm extends React.Component {
 
   render() {
     return (
-      <form onSubmit={this.handleSubmit}>
+      <form onSubmit={this.handleSubmit} className="register-form">
 
       <p class = "title"> Register </p>
 
-        <input class = "phoneField"
+        <input class = "phoneField input-field"
           name="phone"
           type="text"
           value={this.state.phone}
           onChange={this.handleChange}
           placeholder="Phone"
         />
-        <input class = "passwordField"
+        <input class = "passwordField input-field"
           name="password"
           type="password"
           value={this.state.password}
@@ -58,7 +58,7 @@ class RegisterForm extends React.Component {
           placeholder="Password"
         />
 
-        <input class = "loginButton" type="submit" value="Sign up" />
+        <input class = "loginButton submit-btn" type="submit" value="Sign up" />
         <img src={logo} class = "logo3" />
 
         <p class = "registerlink"> Create an account here </p>
