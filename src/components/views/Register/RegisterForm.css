@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .title{
   position: absolute;
@@ -21,6 +22,30 @@ letter-spacing: -0.04em;
 color: #120E21;
 
 text-shadow: 0px 2.76726px 2.21381px rgba(18, 14, 33, 0.0196802), 0px 6.6501px 5.32008px rgba(18, 14, 33, 0.0282725), 0px 12.5216px 10.0172px rgba(18, 14, 33, 0.035), 0px 22.3363px 17.869px rgba(18, 14, 33, 0.0417275), 0px 41.7776px 33.4221px rgba(18, 14, 33, 0.0503198), 0px 100px 80px rgba(18, 14, 33, 0.07);
+=======
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  padding: 10px;
+  max-width: 320px;
+  max-height: 46px;
+}
+input {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px black;
+  border-radius: 8px;
+  max-width: 203px;
+  background-color: #c8d5b9;
+  color: #676767;
+>>>>>>> deff254768899741372618cca04dffaafdd8af4a
 }
 .phoneField{
   position: absolute;
@@ -54,6 +79,7 @@ border-radius: 8px;
 }
 
 
+<<<<<<< HEAD
 input[type="submit"]{
   position: absolute;
 left: 19%;
@@ -98,4 +124,11 @@ align-items: center;
 text-align: center;
 
 color: #000000;
+=======
+input[type="submit"] {
+  max-height: 54px;
+  max-width: 203px;
+  border-radius: 60px;
+  background-color: #8fc0a9;
+>>>>>>> deff254768899741372618cca04dffaafdd8af4a
 }
