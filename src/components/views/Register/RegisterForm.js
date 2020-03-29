@@ -41,8 +41,6 @@ class RegisterForm extends React.Component {
     return (
       <form onSubmit={this.handleSubmit}>
 
-      <p class = "title"> Register </p>
-
         <input class = "phoneField"
           name="phone"
           type="text"
@@ -61,7 +59,7 @@ class RegisterForm extends React.Component {
         <input class = "loginButton" type="submit" value="Sign up" />
         <img src={logo} class = "logo3" />
 
-        <p class = "registerlink"> Create an account here </p>
+      
       </form>
     );
   }

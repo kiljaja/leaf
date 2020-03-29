@@ -4,7 +4,7 @@ async function getDropInCenters(){
   return await getNYCDataSet(url);
 }
 
-// Locations where NYC residents can drop off their food scraps to be composted. 
+// Locations where NYC residents can drop off their food scraps to be composted.
 async function getFoodScrapDropOff(){
   let url = 'https://data.cityofnewyork.us/resource/if26-z6xq.json';
   return await getNYCDataSet(url);
@@ -28,4 +28,4 @@ function parseCenters( center ){
 }
 
 
-export {getDropInCenters, getFoodScrapDropOff};
+export default {getDropInCenters, getFoodScrapDropOff};
