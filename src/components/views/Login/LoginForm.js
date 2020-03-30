@@ -32,7 +32,12 @@ class LoginForm extends React.Component {
   fetch('https://brooklyn-hackathon.herokuapp.com/api/loginUser', requestOptions)
       .then(response => response.json())
       .then(data => {
-        this.props.handleLogin(data.token);
+        if(data.token != null){
+          this.props.handleLogin(data.token);
+        } else{
+          this.setState({phone:data.message})
+        }
+        
         console.log(data)});
 
     event.preventDefault();

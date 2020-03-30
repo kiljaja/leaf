@@ -1,6 +1,6 @@
 import React from "react";
 import Donate from "../Donate/Donate";
-import Map from "../Map/Map";
+import Maps from "../Map/Map";
 import "./Choose.css";
 import logo2 from "../../../assets/logo1-2.png";
 
@@ -44,7 +44,7 @@ class Choose extends React.Component  {
       if(this.state.isDonating)
         return <Donate token={this.props.token} handleGoingBack={this.handleGoingBack}/>;
       else
-        return <Map />;
+        return <Maps />;
 
     }
     
