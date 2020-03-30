@@ -56,7 +56,7 @@
 
 .input-field {
   display: block;
-  padding: 5px;
+  padding: 10px;
   margin: 5px;
   height: 45px;
   border: solid 1px black;
@@ -72,7 +72,9 @@
   height: 54px;
   max-width: 203px;
   border-radius: 60px;
-  background-color: #8fc0a9;
+  background-color: var(--input-bg-color);
+  /* color: var(--input-font-color); */
+  vertical-align: middle;
 }
 
 
