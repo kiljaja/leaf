@@ -8,7 +8,7 @@ function Login() {
     <div className="login">
       <h1 className="title">Leaf</h1>
       <LoginForm />
-      <div className="logo-container">
+      <div className="login-logo-container">
         <img src={logo1} alt="logo"/>
       </div>
     </div>

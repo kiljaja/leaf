@@ -2,15 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-between;
-  height: 100%;
+  justify-content: space-evenly;
+  height: 100vh;
+  max-height: 700px;
 }
 
-.title{
-  margin: 5px;
-}
 
-.logo-container{
+
+.login-logo-container{
+  position: relative;
+  left: 30px;
   width: 357px;
   height: 191px;
 }

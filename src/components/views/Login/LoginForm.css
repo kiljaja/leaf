@@ -1,18 +1,9 @@
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
 .LoginForm {
   display: flex;
   flex-direction: column;
   align-self: center;
+  justify-content: space-around;
   padding: 10px;
-  max-width: 320px;
-}
-.submit-btn {
-  max-height: 54px;
-  max-width: 203px;
-  border-radius: 60px;
-  background-color: #8fc0a9;
+  min-height: 200px;
+  max-width: 50vh;
 }
