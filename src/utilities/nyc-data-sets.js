@@ -28,4 +28,4 @@ function parseCenters( center ){
 }
 
 
-export default {getDropInCenters, getFoodScrapDropOff};
+export default {getDropInCenters};
