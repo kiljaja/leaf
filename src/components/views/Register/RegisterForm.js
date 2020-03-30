@@ -6,8 +6,8 @@ class RegisterForm extends React.Component {
     super(props);
     this.state = {
       phone: "",
-      password: "",
-      zipcode: ""
+      zipcode: "",
+      password: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -25,11 +25,12 @@ class RegisterForm extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        phone: this.state.phone,
+        phone: this.state.phone.replace(/-/g,""),
         password: this.state.password,
         zipcode: this.state.zipcode
       })
   };
+  console.log(requestOptions);
   fetch('https://brooklyn-hackathon.herokuapp.com/api/createUser', requestOptions)
       .then(response => response.json())
       .then(data => console.log(data));
@@ -40,28 +41,29 @@ class RegisterForm extends React.Component {
   render() {
     return (
       <form onSubmit={this.handleSubmit} className="register-form">
-        <input class = "phoneField input-field"
+        <input className = "input-field"
           name="phone"
           type="text"
           value={this.state.phone}
           onChange={this.handleChange}
           placeholder="Phone"
         />
-        <input class = "input-field"
+        <input className = "input-field"
           name="zipcode"
           type="number"
-          value={this.state.password}
+          value={this.state.zipcode}
           onChange={this.handleChange}
-          placeholder="Password"
+          maxLength="5"
+          placeholder="zipcode"
         />
-        <input class = "passwordField input-field"
+        <input className = "input-field"
           name="password"
           type="password"
           value={this.state.password}
           onChange={this.handleChange}
           placeholder="Password"
         />
-        <input class = "loginButton submit-btn" type="submit" value="Sign up" />
+        <input className = "submit-btn" type="submit" value="Sign up" />
       </form>
     );
   }

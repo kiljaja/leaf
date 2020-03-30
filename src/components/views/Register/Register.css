@@ -1,0 +1,25 @@
+.register{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  max-height: 700px;
+}
+
+.register-logo-container{
+  position: relative;
+  left: 150px;
+  bottom: 300px;
+  width: 357px;
+  height: 50px;
+  z-index: -1;
+}
+
+.prompt-login-user{
+  font-size: 19px;
+  font-weight: 520;
+  position: relative;
+  left: 20px;
+  bottom: 50px;
+}
