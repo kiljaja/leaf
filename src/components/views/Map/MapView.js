@@ -194,7 +194,7 @@ class MapView extends Component {
       lat: 40.739312,
       lng: -73.819562
     },
-    zoom: 12
+    zoom: 10
   };
 
   constructor(props) {
@@ -243,6 +243,7 @@ renderMarkers(map, maps) {
    };
     this.state.names.map((item,i) => {
     let marker = new maps.Marker({
+
       position: {lat:parseFloat(this.state.names[i].latitude),
        lng:parseFloat(this.state.names[i].longitude)},
        map,
@@ -281,7 +282,7 @@ renderMarkers(map, maps) {
     if(this.state.names.length !== 0) {
       return (
 
-        <div id = "GoogleMap" style={{ height: '500px', width: '100%' }}>
+        <div id = "GoogleMap" style={{ height: '400px', width: '400px' }}>
 
           <GoogleMapReact
             bootstrapURLKeys={{ key:"AIzaSyBztgrmtSAqAHkfV42Y81XaZb_2qDQCXbM"}}

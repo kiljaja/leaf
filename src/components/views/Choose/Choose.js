@@ -34,7 +34,7 @@ class Choose extends React.Component  {
           <h1 className="title">Choose</h1>
           <button className="submit-btn choose-btn" onClick={this.handleDonate}> Donate </button>
           <button className="submit-btn choose-btn" onClick={this.handleReceive} > Receive </button>
-          <div className="choose-logo-container"> 
+          <div className="choose-logo-container">
             <img src={logo2} alt="Logo"/>
           </div>
         </div>
@@ -44,12 +44,12 @@ class Choose extends React.Component  {
       if(this.state.isDonating)
         return <Donate token={this.props.token} handleGoingBack={this.handleGoingBack}/>;
       else
-        return <Map />;
+        return (<Map />);
 
     }
-    
+
   }
-  
+
 }
 
 export default Choose;
