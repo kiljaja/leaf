@@ -41,7 +41,10 @@ class DonateForm extends React.Component {
       requestOptions
     )
       .then(response => response.json())
-      .then(data => console.log("Success added a new item"));
+      .then(data => {
+        this.setState({itemDescription:"Your item is now listed"})
+        console.log("Success added a new item")
+      });
     event.preventDefault();
   }
 

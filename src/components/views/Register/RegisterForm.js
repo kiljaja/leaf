@@ -33,7 +33,10 @@ class RegisterForm extends React.Component {
   console.log(requestOptions);
   fetch('https://brooklyn-hackathon.herokuapp.com/api/createUser', requestOptions)
       .then(response => response.json())
-      .then(data => console.log(data));
+      .then(data => {
+        this.props.handleDoneWithCreatingUser();
+        console.log(data);
+      });
 
     event.preventDefault();
   }

@@ -3,17 +3,17 @@ import RegisterForm from "./RegisterForm";
 import "./Register.css";
 import logo from "../../../assets/logo1-3.png";
 
-function Register() {
+function Register(props) {
   return (
     <div className="register">
       <h1 className="title"> Register </h1>
-      <RegisterForm />
+      <RegisterForm handleDoneWithCreatingUser={props.handleDoneWithCreatingUser}/>
       <div className="register-logo-container">
         <img src={logo} alt="logo" />
       </div>
 
       <p className="prompt-login-user">
-        You have an account? <b>Log-in</b>
+        You have an account? <a className="a-btn" onClick={props.handleDoneWithCreatingUser}>Log-in</a>
       </p>
     </div>
   );

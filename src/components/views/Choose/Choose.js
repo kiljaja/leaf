@@ -1,6 +1,6 @@
 import React from "react";
 import Donate from "../Donate/Donate";
-// import Map from "../Map/Map";
+import Map from "../Map/Map";
 import "./Choose.css";
 import logo2 from "../../../assets/logo1-2.png";
 
@@ -13,6 +13,7 @@ class Choose extends React.Component  {
     }
     this.handleDonate = this.handleDonate.bind(this);
     this.handleReceive = this.handleReceive.bind(this);
+    this.handleGoingBack = this.handleGoingBack.bind(this);
   }
 
   handleDonate(){
@@ -20,6 +21,10 @@ class Choose extends React.Component  {
   }
   handleReceive(){
     this.setState({isReceiving: true})
+  }
+
+  handleGoingBack(){
+    this.setState({isDonating: false, isReceiving: false})
   }
   render(){
 
@@ -37,9 +42,9 @@ class Choose extends React.Component  {
     } else{
 
       if(this.state.isDonating)
-        return <Donate token={this.props.token} />;
+        return <Donate token={this.props.token} handleGoingBack={this.handleGoingBack}/>;
       else
-        return <h1>Map</h1>;
+        return <Map />;
 
     }
     
