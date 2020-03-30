@@ -1,11 +1,14 @@
 import React, { Component } from 'react';
+import Toggle from 'react-toggle'
 import GoogleMapReact from 'google-map-react';
 import Marker from 'google-maps-react'
 import dataset from '../../../utilities/nyc-data-sets'
 import Async from 'react-async';
 import liveicon from './mainmarker.png'
+import dishicon from './dish.png'
 import center from './center.png'
 import InfoWindow from 'google-map-react'
+import "react-toggle/style.css"
 
 const AnyReactComponent = ({ text }) => <div>{text}</div>;
 
@@ -194,7 +197,7 @@ class MapView extends Component {
       lat: 40.739312,
       lng: -73.819562
     },
-    zoom: 10
+    zoom: 11
   };
 
   constructor(props) {
@@ -260,12 +263,53 @@ renderMarkers(map, maps) {
      scaledSize: new window.google.maps.Size(30, 40), // scaled size
    };
 
+   var dishIMG = {
+     url:dishicon, // url
+     scaledSize: new window.google.maps.Size(30, 40), // scaled size
+   }
+
     let marker = new maps.Marker({
       position: {lat:parseFloat(this.state.livelatitude),
        lng:parseFloat(this.state.livelongitude)},
        map,
       title: "MY LOCATION",
       icon: logoIMG,
+      animation: maps.Animation.DROP
+    });
+
+    let marker0 = new maps.Marker({
+      position: {lat:40.750378,
+       lng:-73.895486},
+       map,
+      title: "Pasta and more",
+      icon: dishIMG,
+      animation: maps.Animation.DROP
+    });
+
+    let marker1 = new maps.Marker({
+      position: {lat:40.688188,
+       lng:-73.814153},
+       map,
+      title: "Free sandwich",
+      icon: dishIMG,
+      animation: maps.Animation.DROP
+    });
+
+    let marker2 = new maps.Marker({
+      position: {lat:40.654076,
+       lng:-73.930478},
+       map,
+      title: "Chicken Soup",
+      icon: dishIMG,
+      animation: maps.Animation.DROP
+    });
+
+    let marker3 = new maps.Marker({
+      position: {lat:40.630109,
+       lng:-73.978180},
+       map,
+      title: "Extra food",
+      icon: dishIMG,
       animation: maps.Animation.DROP
     });
 
@@ -300,13 +344,69 @@ renderMarkers(map, maps) {
             lng={this.state.names[i].longitude}
             text={this.state.names[i].name}
             />)}
+
             <AnyReactComponent
             lat={this.state.livelatitude}
             lng={this.state.livelongitude}
             text={"YOU ARE HERE"}
             />
 
+            <AnyReactComponent
+            lat={40.750378}
+            lng={-73.895486}
+            text={"Pasta and more"}
+            />
+
+            <AnyReactComponent
+            lat={40.688188}
+            lng={-73.814153}
+            text={"Free sandwich"}
+            />
+
+            <AnyReactComponent
+            lat={40.654076}
+            lng={-73.930478}
+            text={"Chicken Soup"}
+            />
+
+
+            <AnyReactComponent
+            lat={40.630109}
+            lng={-73.978180}
+            text={"Extra food"}
+            />
+
           </GoogleMapReact>
+          <div>
+
+          </div>
+          <div class="row">
+
+            <label >
+              <Toggle
+                defaultChecked={this.state.tofuIsReady}
+                  icons={false}
+                  onChange={this.handleTofuChange} />
+                  <span>Food</span>
+            </label>
+
+            <label >
+              <Toggle
+                defaultChecked={this.state.tofuIsReady}
+                  icons={false}
+                  onChange={this.handleTofuChange} />
+                  <span>Clothes</span>
+                </label>
+                <label >
+                  <Toggle
+                    defaultChecked={this.state.tofuIsReady}
+                      icons={false}
+                      onChange={this.handleTofuChange} />
+                      <span>Public Centers</span>
+                    </label>
+            </div>
+
+
         </div>
       );
     } else {

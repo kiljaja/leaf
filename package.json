@@ -17,7 +17,8 @@
     "react-async": "^10.0.1",
     "react-dom": "^16.13.1",
     "react-google-maps": "^9.0.0",
-    "react-scripts": "3.4.1"
+    "react-scripts": "3.4.1",
+    "react-toggle": "^4.1.1"
   },
   "proxy": "https://brooklyn-hackathon.herokuapp.com/",
   "scripts": {
