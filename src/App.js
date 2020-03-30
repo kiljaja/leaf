@@ -9,16 +9,8 @@ import Map from './components/views/Map/Map';
 function App() {
   return (
 
-<<<<<<< HEAD
-    <div>
-      <Map />
-=======
-    <div className="app">
-      <Login />
-      {/* <Donate /> */}
-      {/* <Register /> */}
->>>>>>> 3af2403f307ba7d4162505e71db56131114ff42d
-    </div>
+      <Map
+       />
   );
 }
 
