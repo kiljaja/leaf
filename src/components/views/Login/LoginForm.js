@@ -25,7 +25,7 @@ class LoginForm extends React.Component {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({
-        phone: this.state.phone,
+        phone: this.state.phone.replace(/-/g,""),
         password: this.state.password
       })
   };
