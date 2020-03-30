@@ -21,7 +21,6 @@ class LoginForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert("A name was submitted: ");
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
