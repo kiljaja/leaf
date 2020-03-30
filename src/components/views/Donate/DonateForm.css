@@ -4,7 +4,7 @@
   padding: 0;
 }
 
-form {
+.donate-form {
   display: flex;
   height: 500px;
   flex-direction: column;
@@ -13,18 +13,38 @@ form {
   max-width: 320px;
 }
 
-input {
+.donate-form > .text-field{
   display: block;
   padding: 5px;
   margin: 5px;
   border: solid 1px black;
   border-radius: 8px;
   max-width: 203px;
-  background-color: #c8d5b9;
+  /* background-color: #c8d5b9; */
   color: #676767;
 }
 
-input[type="submit"] {
+.donate-form > .input-field {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px black;
+  border-radius: 8px;
+  max-width: 203px;
+  color: #676767;
+}
+
+.donate-form > .select-list{
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px black;
+  border-radius: 8px;
+  max-width: 203px;
+  /* background-color: #c8d5b9; */
+  color: #676767;
+}
+
+.donate-form> .submit-btn {
   max-height: 54px;
   max-width: 203px;
   border-radius: 60px;

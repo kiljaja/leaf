@@ -39,3 +39,45 @@
     transform: rotate(360deg);
   }
 }
+.app{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.title{
+  margin: 5px;
+  font-size: 3em;
+}
+
+
+.input-field {
+  display: block;
+  padding: 5px;
+  margin: 5px;
+  height: 45px;
+  border: solid 1px black;
+  border-radius: 8px;
+  max-width: 203px;
+  background-color: #c8d5b9;
+  color: var(--input-font-color);
+}
+
+
+.submit-btn {
+  border: solid 1px black;
+  height: 54px;
+  max-width: 203px;
+  border-radius: 60px;
+  background-color: #8fc0a9;
+}
+
+
+img {
+  width: 100%;
+  height: auto;
+}
+

@@ -1,0 +1,17 @@
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+  max-height: 700px;
+}
+
+
+
+.login-logo-container{
+  position: relative;
+  left: 30px;
+  width: 357px;
+  height: 191px;
+}

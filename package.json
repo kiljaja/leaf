@@ -17,6 +17,7 @@
     "react-google-maps": "^9.0.0",
     "react-scripts": "3.4.1"
   },
+  "proxy": "https://brooklyn-hackathon.herokuapp.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
