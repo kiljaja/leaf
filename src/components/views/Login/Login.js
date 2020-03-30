@@ -11,7 +11,7 @@ function Login(props) {
       <div className="login-logo-container">
         <img src={logo1} alt="logo"/>
       </div>
-      <p className="prompt-create-user">Create your account <a className="a-btn" onClick={props.handleCreateUser}>here</a></p>
+      <p className="prompt-create-user clickable">Create your account <a className="a-btn" onClick={props.handleCreateUser}>here</a></p>
     </div>
   );
 }

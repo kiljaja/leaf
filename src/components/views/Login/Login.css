@@ -18,9 +18,13 @@
 }
 
 .prompt-create-user{
-  font-size: 19px;
+  font-size: 20px;
   font-weight: 520;
   position: relative;
+  padding: 5px 10px;
   left: 20px;
-  bottom: 50px;
+  bottom: 80px;
+  border-radius: 25px;
+  background-color: rgba(211, 211, 211, 0.41);
 }
+

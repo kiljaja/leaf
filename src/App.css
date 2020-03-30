@@ -96,3 +96,12 @@ img {
   color: var(--primary-color);
 }
 
+
+.back-arrow:hover{
+  cursor: pointer; 
+}
+
+.clickable:hover{
+ cursor: pointer; 
+}
+

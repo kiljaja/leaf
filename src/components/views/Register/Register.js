@@ -13,7 +13,7 @@ function Register(props) {
       </div>
 
       <p className="prompt-login-user">
-        You have an account? <a className="a-btn" onClick={props.handleDoneWithCreatingUser}>Log-in</a>
+        You have an account? <a className="a-btn clickable" onClick={props.handleDoneWithCreatingUser}>Log-in</a>
       </p>
     </div>
   );
