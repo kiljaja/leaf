@@ -6,7 +6,7 @@ class DonateForm extends React.Component {
     super(props);
     this.state = {
       itemDescription: "",
-      address: "",
+      address: "20 W 34th St, New York, NY 10001",
       itemType: "food"
     };
 
@@ -24,13 +24,13 @@ class DonateForm extends React.Component {
     const requestOptions = {
       method: "POST",
       headers: {
-        Authorization: this.state.token,
+        Authorization: this.props.token,
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
         address: this.state.address,
         itemToDonate: {
-          itemType: this.state.category,
+          itemType: this.state.itemType,
           itemDescription: this.state.itemDescription
         }
       })

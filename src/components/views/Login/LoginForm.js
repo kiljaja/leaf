@@ -32,7 +32,9 @@ class LoginForm extends React.Component {
   };
   fetch('https://brooklyn-hackathon.herokuapp.com/api/loginUser', requestOptions)
       .then(response => response.json())
-      .then(data => console.log(data));
+      .then(data => {
+        this.props.handleLogin(data.token);
+        console.log(data)});
 
     event.preventDefault();
   }

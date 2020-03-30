@@ -3,11 +3,11 @@ import LoginForm from "./LoginForm";
 import "./Login.css";
 import logo1 from "../../../assets/logo1-1.png";
 
-function Login() {
+function Login(props) {
   return (
     <div className="login">
       <h1 className="title">Leaf</h1>
-      <LoginForm />
+      <LoginForm handleLogin={props.handleLogin}/>
       <div className="login-logo-container">
         <img src={logo1} alt="logo"/>
       </div>
