@@ -11,6 +11,7 @@ function Login() {
       <div className="login-logo-container">
         <img src={logo1} alt="logo"/>
       </div>
+      <p className="prompt-create-user">Create your account <a>here</a></p>
     </div>
   );
 }

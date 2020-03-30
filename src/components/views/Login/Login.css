@@ -14,4 +14,13 @@
   left: 30px;
   width: 357px;
   height: 191px;
+  z-index: -1;
+}
+
+.prompt-create-user{
+  font-size: 19px;
+  font-weight: 520;
+  position: relative;
+  left: 20px;
+  bottom: 50px;
 }
