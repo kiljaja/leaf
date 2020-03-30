@@ -1,11 +1,12 @@
 *{
-  box-sizing: 0;
+  box-sizing: border-box;
   margin:0;
   padding: 0;
 }
 
 :root{
   --input-font-color:  #676767;
+  --input-bg-color: #c8d5b9;
 }
 body {
   margin: 0;
