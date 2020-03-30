@@ -7,10 +7,3 @@
   max-height: 700px;
 }
 
-.back-arrow{
-  margin-right: 200px;
-  background: transparent;
-  border: none;
-  font-size: 2em;
-  color: var(--primary-color);
-}

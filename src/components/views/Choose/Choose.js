@@ -44,7 +44,7 @@ class Choose extends React.Component  {
       if(this.state.isDonating)
         return <Donate token={this.props.token} handleGoingBack={this.handleGoingBack}/>;
       else
-        return (<Map />);
+        return (<div> <button className="back-arrow" onClick={this.handleGoingBack}>↩</button><Map /></div>);
 
     }
 
