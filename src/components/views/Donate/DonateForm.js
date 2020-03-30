@@ -40,21 +40,14 @@ class DonateForm extends React.Component {
       "https://brooklyn-hackathon.herokuapp.com/api/userAddItem",
       requestOptions
     )
-      .then(response => response.json())
-      .then(data => {
-        if(data.message !== null){
-          this.setState({itemDescription: data.message});
-        }else if(data.errors !== null){
-          this.setState({itemDescription: data.errors});
-
-        } else {
-          this.setState({itemDescription:"Your item is now listed"});
+      .then(response => {
+        if(!response.ok){
+          throw Error(response.statusText);
         }
-        
-
-        
-        console.log(data)
-      });
+        return response.json()})
+      .then(data => {
+          this.setState({itemDescription:"Your item is now listed"});
+      }).catch( error => this.setState({itemDescription: error}));
     event.preventDefault();
   }
 
