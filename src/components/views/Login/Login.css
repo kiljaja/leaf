@@ -1,0 +1,16 @@
+.login{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.title{
+  margin: 5px;
+}
+
+.logo-container{
+  width: 357px;
+  height: 191px;
+}

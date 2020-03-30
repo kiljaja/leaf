@@ -7,7 +7,8 @@ class RegisterForm extends React.Component {
     super(props);
     this.state = {
       phone: "",
-      password: ""
+      password: "",
+      zipcode: ""
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -21,7 +22,6 @@ class RegisterForm extends React.Component {
   }
 
   handleSubmit(event) {
-    alert("A name was submitted: ");
     const requestOptions = {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
